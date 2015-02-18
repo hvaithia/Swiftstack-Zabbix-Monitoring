@@ -1,0 +1,49 @@
+README
+------
+
+This template has comprehensive checks to monitor the health of the swiftstack Object, Account, Proxy and Container servers
+
+This template was modelled similar to the one provided in nagios for swiftstack monitoring
+
+Please look at the below link for more details
+
+https://www.swiftstack.com/docs/integration/nagios/nagios_plugin_scripts.html
+https://www.swiftstack.com/docs/integration/nagios/node_setup.html
+
+The checks include
+* swift-account-auditor checks
+* swift-account-replicator checks
+* swift-account-server checks
+* swift-container-auditor checks
+* swift-container-replicator checks
+* swift-container-server checks
+* swift-container-updater checks
+* swift-object-auditor checks
+* swift-object-replicator checks
+* swift-object-server checks
+* swift-object-updater checks
+
+swift check back-end daemon sweep time account-auditor
+swift check back-end daemon sweep time account-reaper
+swift check back-end daemon sweep time account-replicator
+swift check back-end daemon sweep time container-auditor
+swift check back-end daemon sweep time container-replicator
+swift check back-end daemon sweep time container-updater
+swift check back-end daemon sweep time object-auditor
+swift check back-end daemon sweep time object-replicator
+swift check back-end daemon sweep time object-updater
+swift check background daemon account-auditor
+swift check background daemon account-reaper
+swift check background daemon account-replicator
+swift check background daemon container-auditor
+swift check background daemon container-replicator
+swift check background daemon container-updater
+swift check background daemon object-auditor
+swift check background daemon object-replicator
+swift check background daemon object-updater
+swift check drives mounted
+swift check drive utilization
+
+and triggers for all the above
+
+
